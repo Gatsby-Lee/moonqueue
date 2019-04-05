@@ -14,7 +14,7 @@ How to Install
     pip install moonqueue
 
 
-How To Use
+How To Use - Redis
 ----------
 
 .. code-block:: python
