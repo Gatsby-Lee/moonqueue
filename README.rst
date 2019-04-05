@@ -5,6 +5,15 @@ Author: Gatsby
 
 Since: 2019-04-04
 
+
+How to Install
+--------------
+
+.. code-block:: bash
+
+    pip install moonqueue
+
+
 How To Use
 ----------
 
@@ -22,6 +31,7 @@ How To Use
     ('hello', [b'apple'])
     >>> r.pop()
     ('hello', [b'banana'])
+
 
 Supported Message Storage
 ------------------------
