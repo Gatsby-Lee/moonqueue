@@ -2,13 +2,23 @@ moonqueue
 =========
 
 Author: Gatsby
+
 Since: 2019-04-04
 
+How To Use
+----------
 
-Supported Message Queues
+.. code-block:: python
+
+    >>> from mq import RedisQueue
+    >>> r = RedisQueue('hello')
+    >>> r.push(['world'])
+    >>> r.pop()
+    ('hello', [b'world'])
+
+
+Supported Message Storage
 ------------------------
 
 * Redis
-
-
 
