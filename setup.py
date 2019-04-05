@@ -7,7 +7,7 @@ requires = [
 
 setup(
     name='moonqueue',
-    version='0.1',
+    version='0.1.1',
     description='Queue with ',
     long_description=open('README.rst').read(),
     classifiers=[

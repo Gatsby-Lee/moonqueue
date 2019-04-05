@@ -6,6 +6,7 @@ changes in moonqueue
 ---
 * Date: 2019-04-05
 * Update README.rst with 'how to install'
+* Add CHANGES.rst
 
 
 0.1
