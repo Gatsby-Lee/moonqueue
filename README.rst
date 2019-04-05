@@ -12,10 +12,16 @@ How To Use
 
     >>> from mq import RedisQueue
     >>> r = RedisQueue('hello')
-    >>> r.push(['world'])
+    >>> r.push(['apple'])
     >>> r.pop()
-    ('hello', [b'world'])
+    ('hello', [b'apple'])
 
+    # Multiple message can be pushed
+    >>> r.push(['apple', 'banana'])
+    >>> r.pop()
+    ('hello', [b'apple'])
+    >>> r.pop()
+    ('hello', [b'banana'])
 
 Supported Message Storage
 ------------------------
