@@ -1,7 +1,7 @@
 moonqueue
 =========
 
-MoonQueue is another Queue Library with Redis storage.
+MoonQueue is another Queue Library using Redis as storage.
 
 
 How to Install
@@ -74,14 +74,14 @@ CHANGES
 =======
 
 0.2.0
----
+-----
 
 * Date: 2019-04-08
 * Raise Empty exception if queue is empty.
 * Change return format from ``pop`` and ``poll_pop``
 
 0.1.2
----
+-----
 
 * Date: 2019-04-08
 * Update README.rst with 'how to install'
@@ -89,7 +89,7 @@ CHANGES
 
 
 0.1.1
----
+-----
 
 * Date: 2019-04-05
 * Update README.rst with 'how to install'
