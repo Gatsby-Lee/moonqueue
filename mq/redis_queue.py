@@ -71,6 +71,7 @@ class RedisQueue(object):
             raise Empty(excep_msg)
         return (qname_msg_tuple[0], (qname_msg_tuple[1],))
 
+
 __all__ = (
     'RedisQueue',
 )

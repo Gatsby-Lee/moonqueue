@@ -9,5 +9,7 @@ dist
 .vscode
 .pytest_cache
 .venv
+.tox
+htmlcov
 test.py
 

@@ -3,6 +3,7 @@
 :since: 2019-04-08
 """
 
+
 class Empty(Exception):
     pass
 

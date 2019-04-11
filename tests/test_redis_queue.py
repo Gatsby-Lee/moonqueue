@@ -7,12 +7,14 @@ import pytest
 from mq import RedisQueue
 from mq.exceptions import Empty
 
+
 def test_object_creation_with_default_value():
     """
     Test that RedisQueue instance could be created with
     default value argument.
     """
     RedisQueue("mq.test")
+
 
 def test_push_one():
     """
@@ -25,6 +27,7 @@ def test_push_one():
     assert type(_qlength) == int
     assert _qlength == 1
 
+
 def test_push_unicode_qname():
     """
     Test push
@@ -35,6 +38,7 @@ def test_push_unicode_qname():
     assert _qname == default_qname
     assert type(_qlength) == int
     assert _qlength == 1
+
 
 def test_push_bytes_qname():
     """
@@ -47,6 +51,7 @@ def test_push_bytes_qname():
     assert type(_qlength) == int
     assert _qlength == 1
 
+
 def test_push_multiple():
     """
     Test push multiple messages
@@ -57,6 +62,7 @@ def test_push_multiple():
     assert _qname == default_qname
     assert _qlength == 3
 
+
 def test_pop_from_empty_queue():
     """
     Test raised Empty exception.
@@ -65,6 +71,7 @@ def test_pop_from_empty_queue():
     q = RedisQueue(default_qname)
     with pytest.raises(Empty):
         q.pop()
+
 
 def test_push_and_pop():
     """
@@ -82,6 +89,7 @@ def test_push_and_pop():
     assert type(_msgs[0]) is bytes
     assert _msgs == (msg.encode(),)
 
+
 def test_push_and_pop_unicode_qname():
     """
     Test push
@@ -98,6 +106,7 @@ def test_push_and_pop_unicode_qname():
     assert type(_msgs[0]) is bytes
     assert _msgs == (msg.encode(),)
 
+
 def test_push_and_pop_with_qname_param():
     """
     Test push
@@ -113,6 +122,7 @@ def test_push_and_pop_with_qname_param():
     assert _qname == qname_param
     assert _msgs == (msg.encode(),)
 
+
 def test_push_and_pollingpop():
     """
     Test push
@@ -126,4 +136,3 @@ def test_push_and_pollingpop():
     # returned msg is bytes type
     assert _qname == default_qname.encode()
     assert _msgs == (msg.encode(),)
-
