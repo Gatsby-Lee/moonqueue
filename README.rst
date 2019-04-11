@@ -80,6 +80,14 @@ How To Use - Redis
 CHANGES
 =======
 
+0.2.1
+-----
+
+* Date: 2019-04-10
+* Add test cases
+* Add travis.yml to use travis CI
+
+
 0.2.0
 -----
 
