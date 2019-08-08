@@ -1,8 +1,8 @@
 .. image:: https://img.shields.io/badge/License-GPL%20v3-blue.svg
    :target: https://www.gnu.org/licenses/gpl-3.0
 
-.. image:: https://badge.fury.io/py/cloud-storage.svg
-    :target: https://badge.fury.io/py/cloud-storage
+.. image:: https://badge.fury.io/py/moonqueue.svg
+    :target: https://badge.fury.io/py/moonqueue
 
 .. image:: https://img.shields.io/travis/Gatsby-Lee/moonqueue.svg
    :target: https://travis-ci.org/Gatsby-Lee/moonqueue
