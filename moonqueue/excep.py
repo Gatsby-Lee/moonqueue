@@ -3,10 +3,11 @@
 :since: 2019-04-08
 """
 
-class Empty(Exception):
+
+class EmptyQueueException(Exception):
     pass
 
 
 __all__ = (
-    'Empty',
+    'EmptyQueueException',
 )

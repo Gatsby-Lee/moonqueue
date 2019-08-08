@@ -1,8 +1,13 @@
-
-
-CHANGES
 CHANGES
 =======
+
+0.3.0
+-----
+* Date: 2019-08-07
+* refactor code to be RedisQueueList, RedisQueueSet
+* refactor RedisQueue to be parent class of RedisQueueList, RedisQueueSet
+* import module name is changed to `moonqueue` from `mq`
+* Empty exception class name is changed to `EmptyQueueException`
 
 0.2.1
 -----
