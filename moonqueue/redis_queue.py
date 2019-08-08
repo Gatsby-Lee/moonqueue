@@ -19,14 +19,14 @@ class RedisQueue(object):
         """
         self._validate_qnames(qnames)
 
-        numq = len(qnames)
+        self.numq = len(qnames)
         qnames_type = type(qnames)
         self._is_multiq = False
-        if numq and qnames_type is str:
+        if self.numq and qnames_type is str:
             self._qnames = qnames
-        elif numq and qnames_type in (list, tuple):
-            self._qnames = qnames if numq > 1 else qnames[0]
-            self._is_multiq = True if numq > 1 else False
+        elif self.numq and qnames_type in (list, tuple):
+            self._qnames = qnames if self.numq > 1 else qnames[0]
+            self._is_multiq = True if self.numq > 1 else False
 
         if redis_kwargs:
             self._redis = Redis(**redis_kwargs)
@@ -41,6 +41,9 @@ class RedisQueue(object):
         elif qnames_type is (tuple, list):
             for _qname in qnames:
                 self._validate_qnames(_qname, [str])
+
+    def get_queues(self):
+        return self._qnames
 
     def delete_queues(self):
         if self._is_multiq:

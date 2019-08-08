@@ -9,7 +9,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
 version = {}
-with open(path.join(here, 'mq/__about__.py'), encoding='utf-8') as f:
+with open(path.join(here, 'moonqueue/__about__.py'), encoding='utf-8') as f:
     exec(f.read(), version)
 
 requires = [
